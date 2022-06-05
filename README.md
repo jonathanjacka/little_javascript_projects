@@ -4,4 +4,8 @@
 
 ---
 
-_Special thanks to Brad Travesy and his course on Udemy for the inspiration and learning: course link [here](https://www.udemy.com/course/50-projects-50-days/)._
+_Inspiration and Thanks:_
+
+_Brad Travesy and his course on Udemy: course [link](https://www.udemy.com/course/50-projects-50-days/)._
+
+_Code and Create, George Lomidze, Lasha Nozadze; course on Udemy : course [link](https://www.udemy.com/course/50-web-projects-with-html-css-and-javascript/)._
