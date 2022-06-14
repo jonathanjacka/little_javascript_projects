@@ -222,7 +222,7 @@ html {
 .ball {
   width: 7rem;
   aspect-ratio: 1;
-  background-image: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(244,219,83,1) 61%, rgba(247,241,25,1) 100%);
+  background-image: radial-gradient(rgba(255, 253, 244, 0.8), rgba(247,241,25, 0.8));
   position: relative;
   left: 15rem;
   top: 10rem;
