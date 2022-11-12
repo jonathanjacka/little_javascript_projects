@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+:root {
+  font-size: 40%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  background-color: #ebd6ea;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 40rem;
+}
+
+/* Menu included nav ul */
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  transform-style: preserve-3d;
+}
+
+.menu-item {
+  width: 15rem;
+  height: 10rem;
+  background-color: #5588dd;
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0 2rem rgba(100, 100, 255, 0.4);
+}
+
+.menu-item:hover {
+  background-color: #3f6dbe;
+  box-shadow: 0 0 3rem rgba(100, 100, 255, 0.6);
+}
+
+.menu.change .menu-item {
+  transform: rotateY(0) rotateX(0) translateX(0) translateY(0) translateZ(0);
+  opacity: 1;
+}
+
+.menu.change .menu-item:active {
+  transform: scale(0.95);
+  transition: all .2s;
+}
+
+.menu-item:not(.center-item) {
+  opacity: 0;
+}
+
+.menu-item:nth-child(1) {
+  transform: rotateY(-70deg) rotateX(20deg) translateX(-50rem) translateY(-15rem) translateZ(-50rem);
+  transition: transform 1s ease-in, opacity 1s ease-in, background-color .5s, box-shadow .5s;
+}
+
+.menu-item:nth-child(2) {
+  transform: rotateY(-70deg) rotateX(20deg) translateX(-20rem) translateY(-5rem) translateZ(-20rem);
+  transition: transform .8s ease-in, opacity 1s ease-in, background-color .5s, box-shadow .5s;
+}
+
+.menu-item:nth-child(3) {
+  transform: rotateX(30deg);
+  transition: transform .8s ease-in, background-color .5s, box-shadow .5s;
+}
+
+.menu-item:nth-child(4) {
+  transform: rotateY(70deg) rotateX(20deg) translateX(20rem) translateY(-5rem) translateZ(-20rem);
+  transition: transform .8s ease-in, opacity 1s ease-in, background-color .5s, box-shadow .5s;
+}
+
+.menu-item:nth-child(5) {
+  transform: rotateY(70deg) rotateX(20deg) translateX(50rem) translateY(-15rem) translateZ(-50rem);
+  transition: transform 1s ease-in, opacity 1s ease-in, background-color .5s, box-shadow .5s;
+}
+
+.menu-item i {
+  font-size: 3rem;
+  color: rgb(247, 160, 238);
+  transition: color .5s;
+}
+
+.menu-item:hover i {
+  color: rgb(255, 93, 239);
+}
